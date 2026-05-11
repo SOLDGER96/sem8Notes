@@ -1,5 +1,5 @@
 **Question:**
-Explain Markov Random Field in detail. (10 Marks)
+## Explain Markov Random Field in detail. (10 Marks)
 
 **Answer:**
 
@@ -68,8 +68,11 @@ This shows that lower energy configurations correspond to higher probabilities.
 * **Physics:** Originating from statistical mechanics (like the Ising model) to describe the magnetic dipole moments of atomic spins.
 * **Spatial Statistics:** Modeling data that is spatially distributed, such as geographic information systems (GIS) and weather forecasting.
 
+---
+
+
 **Question:**
-Explain Gaussian Mixture Models. (10 Marks)
+## Explain Gaussian Mixture Models. (10 Marks)
 
 **Answer:**
 
@@ -130,8 +133,10 @@ To find the optimal parameters ($\mu$, $\Sigma$, $\pi$) for a given dataset, GMM
 * **Image Segmentation:** Used in computer vision to segment foregrounds from backgrounds based on pixel color distributions.
 * **Speech Recognition:** Historically used to model acoustic features of audio signals.
 
+---
+
 **Question:**
-[cite_start]Explain Hidden Markov Models. [cite: 98] (10 Marks) [cite_start][cite: 99]
+## Explain Hidden Markov Models. [cite: 98] (10 Marks) 
 
 **Answer:**
 
@@ -184,8 +189,10 @@ To use HMMs effectively in real-world machine learning scenarios, three fundamen
 * **NATURAL LANGUAGE PROCESSING (NLP):** Used in Part-of-Speech (POS) tagging, where hidden states are grammar tags (Noun, Verb, Adjective) and observations are the actual words in a sentence.
 * **BIOINFORMATICS:** Used for DNA sequence alignment and predicting gene structures based on observable nucleotide sequences.
 
+---
+
 **Question:**
-Explain WGAN (Wasserstein GAN) in detail. (10 Marks)
+## Explain WGAN (Wasserstein GAN) in detail. (10 Marks)
 
 **Answer:**
 
@@ -237,8 +244,10 @@ Because the Critic outputs a raw score, the MinMax log-loss of standard GANs is 
 2.  **Solves Mode Collapse:** The continuous gradients encourage the Generator to explore the entire parameter space, leading to highly diverse outputs.
 3.  **Training Stability:** The Generator and Critic do not need to be carefully balanced. You can train the Critic to optimality (e.g., train the Critic 5 times for every 1 Generator update) without causing the vanishing gradient problem.
 
+---
+
 **Question:**
-Elaborate on the architecture and challenges of training GANs, particularly focusing on issues like training instability and mode collapse. (10 Marks)
+## Elaborate on the architecture and challenges of training GANs, particularly focusing on issues like training instability and mode collapse. (10 Marks)
 
 **Answer:**
 
@@ -294,8 +303,10 @@ To score maximum marks, one must mention the modern solutions developed to count
 2.  **Mini-Batch Discrimination:** The Discriminator looks at a whole batch of images at once rather than one at a time. If the batch lacks diversity (indicating Mode Collapse), the Discriminator penalizes the Generator.
 3.  **Unrolled GANs:** Prevents the Generator from overfitting to a specific Discriminator state by allowing the Generator to \"peek\" several steps ahead at how the Discriminator will update.
 
+---
+
 **Question:**
-[cite_start]Explain the MinMax loss function used in GAN, along with the components of GAN. [cite: 1] (10 Marks)
+## Explain the MinMax loss function used in GAN, along with the components of GAN. (10 Marks)
 
 **Answer:**
 
@@ -351,8 +362,10 @@ The training stops (theoretically) when the system reaches a **NASH EQUILIBRIUM*
 1. The Generator produces perfect fakes that exactly match the real data distribution ($p_g = p_{data}$).
 2. The Discriminator is completely confused and can only guess randomly. Therefore, its output probability for any input (real or fake) becomes exactly $D(x) = 0.5$.
 
+---
+
 **Question:**
-Explain Conditional GAN in detail. (10 Marks)
+## Explain Conditional GAN in detail. (10 Marks)
 
 **Answer:**
 
@@ -411,8 +424,10 @@ $$\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}(x)}[\log D(x|y)] + \mathbb
 * **Text-to-Image Generation:** The condition $y$ is a text sentence (e.g., \"A red bird flying\"). The Generator outputs an image perfectly matching the text.
 * **Targeted Data Augmentation:** Generating synthetic medical images for extremely rare diseases by explicitly conditioning the network on the rare disease label to balance datasets for training classifiers.
 
+--
+
 **Question:**
-Explain DCGAN in detail. (10 Marks) [cite_start][cite: 1]
+## Explain DCGAN in detail. (10 Marks) 
 
 **Answer:**
 
@@ -458,8 +473,10 @@ The Discriminator $D$ acts as a standard CNN image classifier, but without max p
 * **Vector Arithmetic in Latent Space:** DCGAN proved that the latent space ($z$) has semantic meaning. For example, by doing mathematical vector addition in the noise space, the authors showed: $[$Man with Glasses$] - [$Man without Glasses$] + [$Woman without Glasses$] = [$Woman with Glasses$]$.
 * **Unsupervised Feature Extraction:** The trained Discriminator in a DCGAN acts as an excellent, pre-trained feature extractor for other supervised image classification tasks.
 
+---
+
 **Question:**
-Explain CycleGAN in detail. (10 Marks)
+## Explain CycleGAN in detail. (10 Marks)
 
 **Answer:**
 
@@ -516,8 +533,10 @@ $$L(G, F, D_X, D_Y) = L_{GAN}(G, D_Y, X, Y) + L_{GAN}(F, D_X, Y, X) + \lambda L_
 * **Style Transfer:** Converting standard photographs into paintings matching the style of famous artists like Monet, Van Gogh, or Ukiyo-e.
 * **Season/Time Transfer:** Taking a photo of a landscape in Summer and realistically translating it into how it would look in Winter.
 
+---
+
 **Question:**
-Differentiate between Generative Adversarial Network (GAN) and Variational Auto Encoder (VAE).
+## Differentiate between Generative Adversarial Network (GAN) and Variational Auto Encoder (VAE).
 
 **Answer:**
 
@@ -559,8 +578,10 @@ Both **Generative Adversarial Networks (GANs)** and **Variational Autoencoders (
 * **When to use VAE:**
     Use VAEs when the primary goal is **LATENT SPACE MANIPULATION** or learning a smooth, continuous representation of data. If you want to interpolate between two images (e.g., smoothly morphing a smiling face into a frowning face) or if you want stable, predictable training without mode collapse, VAEs are the better choice.
 
-    **Question:**
-Explain Sparse autoencoders in detail. (10 Marks)
+---
+
+**Question:**
+## Explain Sparse autoencoders in detail. (10 Marks)
 
 **Answer:**
 
@@ -622,8 +643,10 @@ $$L_{sparsity} = \sum_{j=1}^{s} KL(\rho || \hat{\rho}_j) = \sum_{j=1}^{s} \left(
 * **Image Classification:** Extracting edges, corners, and textures from raw image pixels before passing them to a traditional classifier.
 * **Anomaly Detection:** Anomalous data points will trigger different activation patterns, resulting in a much higher reconstruction error than normal data.
 
+---
+
 **Question:**
-[cite_start]Explain Variational Auto Encoders in detail. [cite: 86] (10 Marks)
+## Explain Variational Auto Encoders in detail.  (10 Marks)
 
 **Answer:**
 
@@ -693,8 +716,10 @@ $$Loss = L_{Reconstruction} + D_{KL}(\mathcal{N}(\mu, \sigma^2) || \mathcal{N}(0
 * **Predictable Generation:** VAEs do not suffer from Mode Collapse (unlike GANs) and are much more stable to train.
 * **Applications:** Image synthesis, anomaly detection, drug discovery (generating novel molecular structures), and generating music sequences.
 
+---
+
 **Question:**
-Explain Contractive autoencoders. (10 Marks)
+## Explain Contractive autoencoders. (10 Marks)
 
 **Answer:**
 
@@ -745,8 +770,10 @@ Both CAEs and DAEs aim to extract robust features that resist noise, but they do
 ### **8. Disadvantages / Limitations**
 * **Computationally Expensive:** Calculating the Jacobian matrix and its Frobenius norm requires computing second-order derivatives (or numerous first-order derivatives). For high-dimensional input data (like large, high-resolution images), this becomes incredibly slow and computationally heavy compared to standard AEs.
 
+---
+
 **Question:**
-Explain transfer learning. [cite_start]Describe different types of transfer learning. [cite: 1, 81] (10 Marks)
+## Explain transfer learning. Describe different types of transfer learning. (10 Marks)
 
 **Answer:**
 
@@ -807,8 +834,10 @@ When applying Inductive Transfer Learning (the most common type in Deep Learning
 * **Faster Training:** The network already understands basic features (like edges, curves, or basic grammar), drastically reducing computational time.
 * **Better Performance:** Models initialized with pre-trained weights generally achieve a higher starting accuracy, faster convergence, and better overall generalization than models initialized with random weights.
 
+---
+
 **Question:**
-What are the benefits of pre-trained models? (5 Marks)
+## What are the benefits of pre-trained models? (5 Marks)
 
 **Answer:**
 
@@ -835,8 +864,10 @@ Using pre-trained models provides several significant advantages in machine lear
 ### **3. Real-World Application (Extra Value)**
 * **Medical Imaging:** A hospital with only 500 labeled X-ray images of a rare lung disease cannot train a CNN from scratch. Instead, they use a **ResNet-50** model (pre-trained on 1.2 million general images) and fine-tune only the last layer to detect the disease with high accuracy.
 
+---
+
 **Question:**
-Explain AdaBoost in detail. (10 Marks)
+## Explain AdaBoost in detail. (10 Marks)
 
 **Answer:**
 
@@ -902,8 +933,10 @@ $$H(x) = \text{sign} \left( \sum_{t=1}^{T} \alpha_t h_t(x) \right)$$
 * **Facial Recognition:** The famous Viola-Jones face detection algorithm uses AdaBoost heavily to quickly reject background regions and focus on facial features.
 * **Bioinformatics:** Used for classifying gene expression data and identifying cancerous cells.
 
+---
+
 **Question:**
-Explain Random Forest algorithm. (10 Marks) [cite_start][cite: 52, 57]
+## Explain Random Forest algorithm. (10 Marks) 
 
 **Answer:**
 
@@ -964,8 +997,10 @@ The algorithm executes in the following logical steps:
 * **E-Commerce:** Product recommendation engines (predicting if a user will like a product).
 * **Healthcare:** Predicting patient diseases based on a massive matrix of medical history and genetic markers.
 
+---
+
 **Question:**
-Explain XGBoost regression. (10 Marks)
+## Explain XGBoost regression. (10 Marks)
 
 **Answer:**
 
@@ -1027,8 +1062,10 @@ To score maximum marks, highlight the engineering optimizations that make XGBoos
 4. **CACHE OPTIMIZATION:** Hardware-level optimizations ensure that data is stored in CPU cache efficiently, making computation drastically faster.
 5. **TREE PRUNING (Max Depth):** Standard GBM stops splitting when it encounters a negative loss. XGBoost grows the tree to its `max_depth` and then prunes backward, ensuring it doesn't prematurely stop if a negative split leads to a highly positive split further down.
 
+---
+
 **Question:**
-What is metaverse? Explain the characteristics and components of the metaverse. (10 Marks)
+## What is metaverse? Explain the characteristics and components of the metaverse. (10 Marks)
 
 **Answer:**
 
@@ -1074,8 +1111,10 @@ The metaverse is not a single technology; it is an ecosystem built upon a conver
 * **Healthcare:** Surgeons practicing highly complex, rare procedures on 3D virtual patients before operating on real humans.
 * **Education:** Students taking history lessons by virtually walking through ancient Rome rather than reading about it in a textbook.
 
+---
+
 **Question:**
-Explain the limitations of 2D learning environments.
+## Explain the limitations of 2D learning environments.
 
 **Answer:**
 
