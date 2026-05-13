@@ -242,17 +242,17 @@ The use of a baseline ($\bar{R}_t$) significantly reduces the **variance** of th
 **Answer:**
 
 **1. GIVEN DATA**
-* [cite_start]**Total number of iterations ($t$):** $12$ [cite: 76]
+* **Total number of iterations ($t$):** $12$ 
 * **Action counts for each arm ($n_a$):**
-    * [cite_start]$n_1 = 3$ [cite: 76]
-    * [cite_start]$n_2 = 4$ [cite: 76]
-    * [cite_start]$n_3 = 3$ [cite: 76]
-    * [cite_start]$n_4 = 2$ [cite: 76]
+    * $n_1 = 3$ 
+    * $n_2 = 4$ 
+    * $n_3 = 3$ 
+    * $n_4 = 2$ 
 * **Estimated Action-Values ($Q(a)$):**
-    * [cite_start]$Q_{12}(1) = 0.55$ [cite: 76]
-    * [cite_start]$Q_{12}(2) = 0.63$ [cite: 76]
-    * [cite_start]$Q_{12}(3) = 0.61$ [cite: 76]
-    * [cite_start]$Q_{12}(4) = 0.40$ [cite: 76]
+    * $Q_{12}(1) = 0.55$ 
+    * $Q_{12}(2) = 0.63$ 
+    * $Q_{12}(3) = 0.61$ 
+    * $Q_{12}(4) = 0.40$ 
 
 **2. FORMULA USED**
 The UCB1 (Upper Confidence Bound) algorithm selects the next action $A_t$ by maximizing the sum of the estimated value (exploitation) and an upper confidence exploration term:

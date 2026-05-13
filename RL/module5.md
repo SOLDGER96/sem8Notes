@@ -55,63 +55,64 @@ If you are predicting the final score of a cricket match:
 
 #### **PART 1: Differences between Temporal Difference (TD) Learning and Monte Carlo (MC) Methods**
 
-Both Temporal Difference (TD) and Monte Carlo (MC) methods are **model-free** Reinforcement Learning techniques used to estimate value functions from experience. [cite_start]However, they fundamentally differ in how and when they update their estimates[cite: 80, 81].
+Both Temporal Difference (TD) and Monte Carlo (MC) methods are **model-free** Reinforcement Learning techniques used to estimate value functions from experience. However, they fundamentally differ in how and when they update their estimates.
 
 **Comparison Table:**
 
 | Feature | Temporal Difference (TD) Learning | Monte Carlo (MC) Methods |
 | :--- | :--- | :--- |
-| **Update Timing** | [cite_start]Updates values **online, step-by-step** immediately after transitioning to the next state[cite: 80, 81]. | [cite_start]Updates values **offline, at the end** of an entire episode[cite: 80, 81]. |
-| **Bootstrapping** | [cite_start]**YES.** It updates its current estimate based on the *estimated* value of the next state (guessing from a guess)[cite: 80, 81]. | [cite_start]**NO.** It updates estimates based solely on the *actual, fully observed* cumulative return[cite: 80, 81]. |
-| **Environment Types** | [cite_start]Can be used in both **Episodic** (finite) and **Continuing** (infinite/never-ending) environments[cite: 80, 81]. | [cite_start]Can **ONLY** be used in **Episodic** environments (must reach a terminal state to calculate return)[cite: 80, 81]. |
-| **Bias vs. Variance** | [cite_start]Has **Low Variance** (depends on one random action) but **High Bias** (initially biased by arbitrary starting estimates)[cite: 80, 81]. | [cite_start]Has **High Variance** (depends on many random actions in an episode) but mathematically **Zero Bias**[cite: 80, 81]. |
+| **Update Timing** | Updates values **online, step-by-step** immediately after transitioning to the next state. | Updates values **offline, at the end** of an entire episode. |
+| **Bootstrapping** | **YES.** It updates its current estimate based on the *estimated* value of the next state (guessing from a guess). | **NO.** It updates estimates based solely on the *actual, fully observed* cumulative return. |
+| **Environment Types** | Can be used in both **Episodic** (finite) and **Continuing** (infinite/never-ending) environments. | Can **ONLY** be used in **Episodic** environments (must reach a terminal state to calculate return). |
+| **Bias vs. Variance** | Has **Low Variance** (depends on one random action) but **High Bias** (initially biased by arbitrary starting estimates). | Has **High Variance** (depends on many random actions in an episode) but mathematically **Zero Bias**. |
 | **Learning Target** | Uses the **TD Target**: $R_{t+1} + \gamma V(S_{t+1})$ | Uses the **Actual Return**: $G_t = R_{t+1} + \gamma R_{t+2} + \dots$ |
-| **Speed of Learning** | [cite_start]Generally learns **faster** initially because it does not have to wait for long episodes to finish before updating[cite: 80, 81]. | [cite_start]Learns **slower** per step, especially if the episodes are extremely long[cite: 80, 81]. |
+| **Speed of Learning** | Generally learns **faster** initially because it does not have to wait for long episodes to finish before updating. | Learns **slower** per step, especially if the episodes are extremely long. |
 
 ---
 
 #### **PART 2: Main Components of TD Prediction Algorithms**
 
-TD Prediction (specifically TD(0)) aims to estimate the state-value function $V_\pi(s)$ for a given policy $\pi$[cite: 80, 81]. The main components are defined by the TD update equation:
+TD Prediction (specifically TD(0)) aims to estimate the state-value function $V_\pi(s)$ for a given policy $\pi$. The main components are defined by the TD update equation:
 
 $$V(S_t) \leftarrow V(S_t) + \alpha \left[ R_{t+1} + \gamma V(S_{t+1}) - V(S_t) \right]$$
 
-* [cite_start]**Current State Value ($V(S_t)$):** The agent's current estimated value of being in state $S_t$[cite: 80, 81].
-* [cite_start]**Next State Value ($V(S_{t+1})$):** The agent's estimated value of the state it lands in after taking an action[cite: 80, 81]. This enables *bootstrapping*.
-* [cite_start]**Immediate Reward ($R_{t+1}$):** The actual numerical reward received immediately after taking an action from state $S_t$[cite: 80, 81].
-* [cite_start]**Learning Rate ($\alpha$):** A parameter ($0 < \alpha \le 1$) that dictates how much the newly calculated error overrides the old value estimate[cite: 80, 81].
-* [cite_start]**Discount Factor ($\gamma$):** A parameter ($0 \le \gamma \le 1$) that determines the present value of future rewards[cite: 80, 81].
-* [cite_start]**TD Target ($R_{t+1} + \gamma V(S_{t+1})$):** The \"new, better guess\" for the value of $S_t$, consisting of the actual immediate reward plus the discounted future estimate[cite: 80, 81].
-* **TD Error ($\delta_t$):** Represented by $[R_{t+1} + \gamma V(S_{t+1}) - V(S_t)]$. It is the difference between the better estimate (TD Target) and the old estimate[cite: 80, 81].
+* **Current State Value ($V(S_t)$):** The agent's current estimated value of being in state $S_t$.
+* **Next State Value ($V(S_{t+1})$):** The agent's estimated value of the state it lands in after taking an action. This enables *bootstrapping*.
+* **Immediate Reward ($R_{t+1}$):** The actual numerical reward received immediately after taking an action from state $S_t$.
+* **Learning Rate ($\alpha$):** A parameter ($0 < \alpha \le 1$) that dictates how much the newly calculated error overrides the old value estimate.
+* **Discount Factor ($\gamma$):** A parameter ($0 \le \gamma \le 1$) that determines the present value of future rewards.
+* **TD Target ($R_{t+1} + \gamma V(S_{t+1})$):** The \"new, better guess\" for the value of $S_t$, consisting of the actual immediate reward plus the discounted future estimate.
+* **TD Error ($\delta_t$):** Represented by $[R_{t+1} + \gamma V(S_{t+1}) - V(S_t)]$. It is the difference between the better estimate (TD Target) and the old estimate.
 
 ---
 
 #### **PART 3: Key Steps Involved in a TD Prediction Algorithm (TD(0))**
 
-The standard step-by-step execution of the TD(0) prediction algorithm is as follows[cite: 80, 81]:
+The standard step-by-step execution of the TD(0) prediction algorithm is as follows:
 
 * **Step 1: Initialization**
-    * [cite_start]Initialize the value function $V(s)$ arbitrarily for all states $s \in S$ (except terminal states, which must be $0$)[cite: 80, 81].
-    * [cite_start]Specify the policy $\pi$ that needs to be evaluated[cite: 80, 81].
-    * [cite_start]Set the step-size parameter $\alpha$ and discount factor $\gamma$[cite: 80, 81].
+    * Initialize the value function $V(s)$ arbitrarily for all states $s \in S$ (except terminal states, which must be $0$).
+    * Specify the policy $\pi$ that needs to be evaluated.
+    * Set the step-size parameter $\alpha$ and discount factor $\gamma$.
 
 * **Step 2: Episode Loop**
-    * [cite_start]Start a new episode and initialize the starting state $S$[cite: 80, 81].
+    * Start a new episode and initialize the starting state $S$.
 
 * **Step 3: Step-by-Step Execution (Inner Loop)**
     * While state $S$ is not a terminal state, repeat:
-        1.  [cite_start]**Action Selection:** Choose an action $A$ based on the current state $S$ strictly following policy $\pi$[cite: 80, 81].
-        2.  **Observation:** Execute action $A$ in the environment. [cite_start]Observe the immediate reward $R$ and the resulting next state $S'$[cite: 80, 81].
+        1.  **Action Selection:** Choose an action $A$ based on the current state $S$ strictly following policy $\pi$.
+        2.  **Observation:** Execute action $A$ in the environment. Observe the immediate reward $R$ and the resulting next state $S'$.
         3.  **Value Update:** Update the value estimate of the previous state $S$ using the TD formula:
             $$V(S) \leftarrow V(S) + \alpha \left[ R + \gamma V(S') - V(S) \right]$$
 
-        4.  [cite_start]**State Transition:** Set the current state $S$ to the new state $S'$ ($S \leftarrow S'$)[cite: 80, 81].
+        4.  **State Transition:** Set the current state $S$ to the new state $S'$ ($S \leftarrow S'$).
 
 * **Step 4: Repeat**
     * Loop back to Step 2 for the next episode until the values of $V(s)$ converge to the true value function $V_\pi(s)$.
 
-    **Answer:**
 
+### Q. Discuss the difference between on-policy and off-policy learning. Provide examples of algorithms that fall into each category. (5 marks)
+**Answer:**
 **1. Introduction to the Two Policies:**
 To understand the difference, we must first define the two types of policies involved in Reinforcement Learning:
 * **Target Policy ($\pi$):** The policy that the agent is trying to learn and optimize (the final goal).
@@ -154,7 +155,7 @@ Here are the perfect, exam-ready answers structured to help you secure full mark
 
 ---
 
-### **Question 1: Define Off-policy algorithm and on-policy algorithm and identify SARSA is which type of algorithm and why? Write SARSA algorithm in detail? (10 marks)**
+### **Q. Define Off-policy algorithm and on-policy algorithm and identify SARSA is which type of algorithm and why? Write SARSA algorithm in detail? (10 marks)**
 
 **Answer:**
 

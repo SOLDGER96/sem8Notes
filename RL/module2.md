@@ -137,8 +137,8 @@ At time step $t$, the agent observes State $S_t$ from the environment and choose
 
 **1. GIVEN DATA (PROBLEM FORMULATION)**
 In Reinforcement Learning (RL) terminology, this is an episodic task. 
-* [cite_start]**Goal Reward ($R_{goal}$):** $+10$ points (Terminal state) [cite: 134]
-* [cite_start]**Step Penalty ($R_{step}$):** $-1$ point per move [cite: 134]
+* **Goal Reward ($R_{goal}$):** $+10$ points (Terminal state) 
+* **Step Penalty ($R_{step}$):** $-1$ point per move 
 * **Total Expected Reward Formula ($G$):** The total reward is the sum of the goal reward and the accumulated step penalties. Let $N$ be the total number of moves taken.
     $$Total \ Reward = R_{goal} + (N \times R_{step})$$
 
@@ -150,24 +150,24 @@ In Reinforcement Learning (RL) terminology, this is an episodic task.
 
 **2. STEP-BY-STEP SOLUTIONS**
 
-* [cite_start]**Sub-Question 1: Total reward for 15 moves?** [cite: 136]
+* **Sub-Question 1: Total reward for 15 moves?** 
     * *Calculation:* Substitute $N = 15$ into the formula.
     * $$Total \ Reward = 10 - 15 = -5$$
 
     * **FINAL ANSWER:** The total reward is **$-5$ points**. (The agent spent more points wandering the maze than the treasure was worth).
 
-* [cite_start]**Sub-Question 2: Total reward for 20 moves?** [cite: 139]
+* **Sub-Question 2: Total reward for 20 moves?** 
     * *Calculation:* Substitute $N = 20$ into the formula.
     * $$Total \ Reward = 10 - 20 = -10$$
 
     * **FINAL ANSWER:** The total reward is **$-10$ points**.
 
-* [cite_start]**Sub-Question 3: What is the maximum possible reward?** [cite: 144]
+* **Sub-Question 3: What is the maximum possible reward?** 
     * *Concept:* To maximize the overall reward, the agent must *minimize* the negative step penalties. Therefore, the maximum possible reward is strictly determined by the **shortest optimal path** from the entrance to the chest.
     * *Calculation:* Let $S_{min}$ be the absolute minimum number of moves required to solve the maze (the shortest path).
     * **FINAL ANSWER:** The maximum possible reward is mathematically represented as **$10 - S_{min}$**. *(For example, if the shortest path takes exactly 5 steps, the absolute maximum reward the player can achieve is $10 - 5 = 5$ points).*
 
-* [cite_start]**Sub-Question 4: Reward if the player gets stuck indefinitely?** [cite: 147]
+* **Sub-Question 4: Reward if the player gets stuck indefinitely?** 
     * *Concept:* If the player is stuck indefinitely, they never reach the terminal state (the treasure chest) and never receive the $+10$ reward. However, they continue to take an infinite number of moves, accumulating a $-1$ penalty for every single step.
     * *Calculation:* As the number of moves $N \to \infty$, the total reward evaluates to $0 - \infty$.
     * **FINAL ANSWER:** The total reward would be **Negative Infinity ($-\infty$)**.
