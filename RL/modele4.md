@@ -75,8 +75,9 @@ Monte Carlo (MC) Policy Evaluation is a **model-free** Reinforcement Learning te
 **2. FIRST-VISIT Monte Carlo Method:**
 
 * **Definition:** In First-Visit MC, the algorithm estimates the value of state $s$ as the average of the returns following ONLY the **very first time** state $s$ is visited in each episode. Any subsequent visits to state $s$ within that exact same episode are completely ignored.
-* **Algorithmic Step:** 1. Generate an episode using policy $\pi$.
-  2. For each state $s$ appearing in the episode, check if it is the *first occurrence* of $s$.
+* **Algorithmic Step:** 
+1. Generate an episode using policy $\pi$.
+2. For each state $s$ appearing in the episode, check if it is the *first occurrence* of $s$.
   3. If YES: Append the return $G_t$ to the list of returns for $s$, and update the average $V(s)$.
   4. If NO: Ignore it and move to the next step.
 * **Statistical Properties:**
