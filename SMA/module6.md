@@ -79,7 +79,7 @@ The primary applications of social media analytics align directly with core busi
 ### **3. Explain data privacy, privacy policies and settings, and issues related to data ownership on social media. How can individuals protect their personal data? [May 2025]**
 
 **Data Privacy, Policies, and Settings**
-On social media platforms, privacy settings and privacy policies serve two distinct functions. Privacy settings determine how visible a user's data is to other individuals online[cite: 1164]. These controls vary widely; some sites offer sophisticated tools to restrict information to specific lists of people, while others offer no privacy options at all. However, these settings generally only affect what other users can see on a profile. 
+On social media platforms, privacy settings and privacy policies serve two distinct functions. Privacy settings determine how visible a user's data is to other individuals online. These controls vary widely; some sites offer sophisticated tools to restrict information to specific lists of people, while others offer no privacy options at all. However, these settings generally only affect what other users can see on a profile. 
 
 Privacy policies, conversely, dictate how the hosting company itself handles the data. These policies address what personal data is collected, how it is used for personalization or customer service, which third parties it is shared with or sold to, and what happens to the data if a user decides to delete their account.
 

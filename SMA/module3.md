@@ -39,7 +39,7 @@ Text analytics can be broadly categorized into two types based on the timeframe 
 
 **1. Static Text Analytics**
 * **Definition:** Static text analytics involves the analysis of a **fixed, historical dataset** that has been collected over a specific period in the past. The data is downloaded, stored locally, and does not change during the analysis.
-* **Characteristics:** * It provides a \"snapshot\" of user opinions at a specific point in time.
+* **Characteristics:**  It provides a \"snapshot\" of user opinions at a specific point in time.
     * It allows for deep, complex, and highly accurate analysis because time and processing speed are not major constraints.
 * **Use Cases:** Conducting post-campaign analysis (e.g., analyzing all tweets generated during a one-month marketing campaign), identifying historical market trends, or performing a quarterly brand health review.
 

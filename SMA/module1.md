@@ -23,7 +23,7 @@ To truly understand social media, it is best to look at the core characteristics
 Here are the 8 core characteristics of social media:
 
 **1. Social Media is Many-to-Many**
-* Social media enables interaction among users in a many-to-many fashion[cite: 1339]. 
+* Social media enables interaction among users in a many-to-many fashion. 
 * This is vastly different from conventional technological media like print, radio, television, and telephone, which generally operate on a one-to-many or one-to-one basis.
 
 **2. Social Media is Participatory**
@@ -128,7 +128,7 @@ The seven layers of social media analytics are:
 * **Common Tools:** Google Fusion Table, Tweepsmap, Trendsmap, Followerwonk, Esri Maps, and Agos.
 
 **7. Search Engine Analytics (Layer Seven)**
-* **Explanation:** Search engine analytics focuses on analyzing historical search data to gain valuable insights into a wide range of areas[cite: 1576]. This includes conducting trends analysis, keyword monitoring, analyzing search result histories, and evaluating advertisement spending statistics.
+* **Explanation:** Search engine analytics focuses on analyzing historical search data to gain valuable insights into a wide range of areas. This includes conducting trends analysis, keyword monitoring, analyzing search result histories, and evaluating advertisement spending statistics.
 * **Common Tools:** Google Trends.
 
 ---
@@ -177,7 +177,7 @@ The main challenges in social media analytics revolve around handling the **shee
 ### **The Social Media Analytics Cycle**
 
 **Introduction:**
-Social media analytics is a six-step iterative process that involves both the \"science\" and \"art\" of mining desired business insights from social media data[cite: 1583]. At the very center of this analytics cycle are the **Business Objectives**, which inform and guide every single step of the journey[cite: 1584]. The process continues until these stated business objectives are fully satisfied. 
+Social media analytics is a six-step iterative process that involves both the \"science\" and \"art\" of mining desired business insights from social media data. At the very center of this analytics cycle are the **Business Objectives**, which inform and guide every single step of the journey. The process continues until these stated business objectives are fully satisfied. 
 
 The six stages of the Social Media Analytics Cycle are:
 
