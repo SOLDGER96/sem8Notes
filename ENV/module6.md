@@ -1,7 +1,3 @@
-Here are the university-ready answers for this batch of questions on Environmental Legislations and Regulatory Bodies. I have combined the overlapping questions on the Environment Protection Act to provide a single, comprehensive answer.
-
-***
-
 ### **Q1 & Q2. Discuss in short about the Environment Protection Act. Explain any five Salient features of the Environment Protection Act, 1986. (2024, 2025)**
 **(Expected Weightage: 10 Marks)**
 
