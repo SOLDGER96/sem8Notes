@@ -48,7 +48,7 @@ Corporate Environmental Responsibility (CER) is a specialized subset of CSR. It 
 * **Brand Reputation:** Modern consumers and investors (ESG investors) heavily favor eco-friendly brands. CER builds immense brand loyalty.
 * **Operational Efficiency:** Reducing energy and material waste directly increases profit margins.
 
-**3. Three Ways Companies Can Practice CER **
+**3. Three Ways Companies Can Practice CER**
 > **Mnemonic Trick:** **R-C-S** (Renewables, Circular, Supply-chain)
 * **1. Transitioning to Renewable Energy:** Installing solar panels on factory rooftops, purchasing green energy credits, and optimizing logistics to reduce fossil fuel consumption.
 * **2. Adopting a Circular Economy Model:** Moving to a \"Zero-Waste-to-Landfill\" policy by redesigning products for longevity, using biodegradable packaging, and establishing massive take-back/recycling programs (e.g., Apple recycling old iPhones).
