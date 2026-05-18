@@ -129,7 +129,8 @@ The PDCA (Plan-Do-Check-Act) cycle, also known as the Deming Wheel, is the found
 > Place \"Continual Improvement\" in the center of the circle.
 
 **2. Explanation of the Cycle**
-* **PLAN (Establishing the Framework):** * Conduct an initial environmental review.
+* **PLAN (Establishing the Framework):** 
+  * Conduct an initial environmental review.
   * Identify significant environmental aspects (what you do) and impacts (how it affects the earth).
   * Establish an environmental policy, set legal compliance goals, and define specific objectives.
 * **DO (Implementation and Operation):**
