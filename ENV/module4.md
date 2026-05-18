@@ -61,7 +61,7 @@ Corporate Environmental Responsibility (CER) is a specialized subset of CSR. It 
 **1. Definition**
 Environmental Quality Management (EQM) is the systematic process of assessing, maintaining, and improving the quality of the natural environment (air, water, soil, and noise levels). It utilizes scientific monitoring and policy enforcement to ensure the environment remains habitable and resilient.
 
-**2. Objectives of EQM **
+**2. Objectives of EQM**
 * **Establishing Baselines and Standards:** The primary objective is to define what constitutes a \"safe\" environment. This involves setting strict numerical thresholds, such as the National Ambient Air Quality Standards (NAAQS) for pollutants like PM2.5 or SO2.
 * **Continuous Monitoring and Assessment:** To regularly deploy sensors and conduct laboratory tests on water bodies, soil, and air to track pollution trends and identify ecological hotspots before they reach critical levels.
 * **Protecting Public Health:** To minimize human exposure to hazardous toxic substances, thereby reducing the burden of environmental diseases (like asthma, heavy metal poisoning, and waterborne illnesses).
