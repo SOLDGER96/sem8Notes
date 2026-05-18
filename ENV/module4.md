@@ -75,7 +75,7 @@ Environmental Quality Management (EQM) is the systematic process of assessing, m
 **1. Introduction**
 An Environmental Audit is a systematic, documented, periodic, and objective evaluation of how well an organization's environmental management system and equipment are performing. 
 
-**2. Guidelines / Phases for Conducting an Audit **
+**2. Guidelines / Phases for Conducting an Audit**
 Conducting a standard environmental audit is strictly divided into three phases:
 
 > **📝 Exam Tip - Draw a flow block diagram:**
