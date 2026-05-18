@@ -5,7 +5,7 @@
 The government acts as the primary custodian of a nation's natural resources. To achieve sustainable development, the government operates in a dual capacity: proactively as a **Planning Agency** and reactively/enforcingly as a **Regulatory Agency**.
 
 **2. Role as a Planning Agency (Proactive Role)**
-As a planner, the government sets the long-term vision and framework for environmental conservation[cite: 29].
+As a planner, the government sets the long-term vision and framework for environmental conservation.
 * **Policy Formulation:** Drafting national environmental policies, such as the National Action Plan on Climate Change (NAPCC).
 * **Zoning and Land-Use Planning:** Demarcating Eco-Sensitive Zones (ESZs), protecting wetlands, and planning sustainable urban expansions to prevent ecological destruction.
 * **Resource Allocation:** Providing subsidies for renewable energy (like solar parks) and funding nationwide initiatives (e.g., the Swachh Bharat Abhiyan or Namami Gange).
