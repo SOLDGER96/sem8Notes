@@ -56,15 +56,16 @@ ISO 14000 is a globally recognized family of standards developed by the Internat
 An EMS is highly versatile. It is not limited to heavy industries but is applied across various sectors to systematically manage environmental footprints.
 
 **2. Industry-Specific Applications**
-* **Manufacturing & Heavy Industry:** * *Application:* Controlling smokestack emissions, treating toxic effluents before river discharge, and optimizing raw material usage (e.g., steel or cement plants).
+* **Manufacturing & Heavy Industry:** 
+  * **Application:** Controlling smokestack emissions, treating toxic effluents before river discharge, and optimizing raw material usage (e.g., steel or cement plants).
 * **Construction & Real Estate:**
-  * *Application:* Managing dust and noise pollution during building phases, implementing proper disposal of construction debris, and adopting green building materials.
+  * **Application:** Managing dust and noise pollution during building phases, implementing proper disposal of construction debris, and adopting green building materials.
 * **Information Technology (IT) & Corporate Sectors:**
-  * *Application:* Managing **E-waste** (discarded servers, laptops), optimizing server cooling to reduce energy consumption, and achieving carbon-neutral campuses.
+  * **Application:** Managing **E-waste** (discarded servers, laptops), optimizing server cooling to reduce energy consumption, and achieving carbon-neutral campuses.
 * **Healthcare & Hospitals:**
-  * *Application:* Strict segregation, sterilization, and incineration of biomedical and infectious waste to prevent public health crises.
+  * **Application:** Strict segregation, sterilization, and incineration of biomedical and infectious waste to prevent public health crises.
 * **Agriculture & Food Processing:**
-  * *Application:* Minimizing pesticide and chemical fertilizer runoff into water bodies, and managing organic waste through composting or biogas generation.
+  * **Application:** Minimizing pesticide and chemical fertilizer runoff into water bodies, and managing organic waste through composting or biogas generation.
 
 ---
 
